@@ -6,7 +6,7 @@ Machine learning solution for the Kaggle **[Crop Yield Prediction Challenge](htt
 
 ```
 MLCrop/
-├── algo_clean (2).ipynb    # ⭐ Main notebook — feature engineering, model comparison, and tuned CatBoost pipeline
+├── algo_main.ipynb    # ⭐ Main notebook — feature engineering, model comparison, and tuned CatBoost pipeline
 ├── crop.ipynb              # Exploratory data analysis notebook (pandas / seaborn / matplotlib)
 ├── crop_yield_train.csv    # Training data (features + yield_tpha target)
 ├── crop_yield_test.csv     # Test data (features only, for Kaggle submission)
@@ -14,7 +14,7 @@ MLCrop/
 └── README.md
 ```
 
-## Main file: `algo_clean (2).ipynb`
+## Main file: `algo_main.ipynb`
 
 This is the core modeling notebook. It loads `crop_yield_train.csv` / `crop_yield_test.csv` and runs the full pipeline below.
 
@@ -74,7 +74,7 @@ This is the core modeling notebook. It loads `crop_yield_train.csv` / `crop_yiel
 
 4. **Launch Jupyter and open the main notebook**
    ```bash
-   jupyter notebook "algo_clean (2).ipynb"
+   jupyter notebook "algo_main.ipynb"
    ```
    Run all cells top to bottom — the CSV files are read from the repository root (`crop_yield_train.csv`, `crop_yield_test.csv`), so no path changes are needed if you run the notebook from the cloned repo directory.
 
